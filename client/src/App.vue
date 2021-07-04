@@ -1,20 +1,14 @@
 <template>
-  <div class="app">
-    <img
-      alt="Vue logo"
-      src="./assets/logo.png"
-    />
-    <HelloWorld msg="Welcome to your user-management system" />
-  </div>
+  <Navigation userName="Praxis Dr. Regensburg, admin1" />
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import Navigation from "./components/Navigation.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld
+    Navigation
   }
 };
 </script>
@@ -26,6 +20,17 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: none;
+  overflow-y: scroll;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2em;
 }
 </style>
